@@ -1,0 +1,49 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* normalizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* normalizing */
+
+nav{
+    border-bottom: solid 10px transparent;
+    box-shadow: 0 0 40px black;
+}
+
+.log-out{
+    transition: 0.5s;
+}
+
+.log-out:hover{
+    background-color: #FFC107;
+    color: black !important;
+}
+
+.container{
+    height: 75vh;
+}
+
+.welcome{
+    width: 50%;
+    height: 30%;
+    background-color: transparent;
+    border-bottom: solid 2px transparent;
+    box-shadow: 0 0 40px black;
+}
+
+.navbar-toggler{
+    display: none;
+}

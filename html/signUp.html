@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- signUp css -->
+    <link rel="stylesheet" href="../css/signUp.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="form mt-5 md:w-50 text-center">
+                    <div class="p-3">
+                        <h1 class="mb-3">Smart Login System</h1>
+                        <div class="form-floating mb-3">
+                            <input oninput=" validateForm(this)" type="text" class="form-control text-white" id="nameInput" placeholder="name@example.com">
+                            <p class="text-danger d-none mt-2">Name must contain at least 3 characters</p>
+                            <label for="floatingInput" class="text-white">Enter Your Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input oninput=" validateForm(this)" type="email" class="form-control text-white" id="emailInput" placeholder="Password">
+                            <p class="text-danger d-none mt-2">Email invalid (ex: username@example.com)</p>
+                            <label for="floatingPassword" class="text-white">Enter Your E-mail</label>
+                        </div>
+                        <div class="form-floating mt-3">
+                            <input oninput=" validateForm(this)" type="password" class="form-control text-white" id="passwordInput" placeholder="Password">
+                            <p class="text-danger d-none mt-2">Password must contain at least 5 characters</p>
+                            <p id="success" class="d-none text-success mt-4 fw-bold">Congratulation <br> Now u have an account go to sign in page</p>
+                            <label for="floatingPassword" class="text-white">Enter Your Password</label>
+                        </div>
+                        <button type="submit" class="signUpBtn btn btn-outline-light w-100 mt-4">Sign Up</button>
+                        <p class="mt-3 text-white">You have an account ? <a href="../index.html" class="text-white">Sign in</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="../js/signUp.js"></script>
+</body>
+</html>

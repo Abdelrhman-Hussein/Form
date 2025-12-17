@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- welcome css -->
+    <link rel="stylesheet" href="../css/welcome.css">
+    <title>Welcome</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light fs-3" href="#">SMART LOGIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="../index.html" class="log-out text-decoration-none text-light border border-2 border-warning p-2 rounded">logout</a>
+        </div>
+    </nav>
+
+
+
+    <section>
+        <div class="container d-flex justify-content-center align-items-center md:w-50">
+            <div class="welcome d-flex justify-content-center align-items-center text-center">
+                <h1 id="welcomeMessage"></h1>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        
+        var userName = localStorage.getItem('loggedInUser');
+
+        if (userName) {
+        document.getElementById('welcomeMessage').textContent = "Welcome, " + userName;
+        document.getElementById('welcomeMessage').classList.add('text-info')
+        }
+    </script>
+
+
+
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- welcome js -->
+    <script src="../js/welcome.js"></script>
+</body>
+</html>
