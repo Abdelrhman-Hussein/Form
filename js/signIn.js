@@ -34,7 +34,7 @@ function isUserEmailAndPasswordExists(){
     }
     
     if (found) {
-        window.location.href = "../html/welcome.html";
+        window.location.href = "html/welcome.html";
 
     } else {
         incorrect.classList.remove('d-none');
